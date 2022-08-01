@@ -430,7 +430,54 @@
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
+        <form
+          name="signup-form"
+          autocomplete="on"
+          class="form signup-form"
+        >
+        <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
+        <div class="form-field">
+          <label for="name" class="form-label">Ім'я</label>
+          <input type="text" name="name" id="name" class="form-input" />
+        </div>
+        <div class="form-field">
+          <label for="tel" class="form-label">Телефон</label>
+          <input type="tel" name="tel" id="tel" class="form-input" />
+        </div>
+        <div class="form-field">
+          <label for="mail" class="form-label">Пошта</label>
+          <input type="email" name="mail" id="mail" class="form-input" />
+        </div>
+        <div class="form-comment">
+          <label for="comment" class="form-label">Коментар</label>
+          <textarea
+            name="comment"
+            id="comment"
+            cols="30"
+            rows="10"
+            placeholder="Введіть текст"
+            class="form-textarea">
+          </textarea>
+        </div>
+        <div class="form-conditions">
+          <input
+            type="checkbox"
+            name="conditions"
+            value="conditions"
+            id="conditions"
+          />
+          <label for="conditions">
+            Погоджуюся з розсилкою та приймаю
+            <span><a href="">Умови договору</a></span>
+          </label>
+        </div>
+        <div class="form-button">
+        <button type="submit" class="button butn-signup">Відправити</button>
+        </div>
+        </form>
       </div>
+
+      </form>
     </div>
     <script src="./js/modal.js"></script>
   </body>
