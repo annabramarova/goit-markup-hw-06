@@ -878,8 +878,130 @@ p {
   fill: var(--accent-color);
 }
 
-.butn-signup {
+textarea {
+  resize: none;
+}
+
+.form-modal {
+  width: 528px;
+  padding: 40px;
+}
+
+.form-field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+
+  display: inline-block;
+
+  fill: var(--title-text-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-title {
   text-align: center;
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+
+  color: var(--logo-second-color);
+}
+
+.form-input {
+  margin: 0;
+  padding: 11px 12px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  background-color: var(--white-color);
+}
+
+.form-label {
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+
+.form-input:focus {
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+}
+
+.form-input:focus ~ .form-icon {
+  fill: var(--accent-color);
+}
+
+.comments-thumb {
+  display: flex;
+  flex-direction: column;
+}
+
+.textarea {
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  background-color: var(--white-color);
+}
+
+.terms-input {
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.terms-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.terms-link {
+  color: var(--accent-color);
+  text-decoration-line: underline;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.form-terms {
+  position: relative;
+  display: block;
+}
+
+.terms-checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.terms-checkbox:checked .icon-check {
+  background-color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+.form-button {
+  text-align: center;
+}
+
+.butn-signup {
+  display: inline-block;
   padding: 10px 52px;
   border: 0;
   min-width: 200px;
@@ -901,85 +1023,4 @@ p {
 .butn-signup:hover,
 .butn-signup:focus {
   background-color: var(--main-button-hover);
-}
-
-textarea {
-  resize: none;
-}
-
-.form-modal {
-  width: 528px;
-  padding: 40px;
-}
-
-.form-title {
-  text-align: center;
-  margin-bottom: 12px;
-
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  letter-spacing: 0.03em;
-
-  color: var(--logo-second-color);
-}
-
-.form-field {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
-}
-
-.form-field input {
-  margin: 0;
-}
-
-.form-comment {
-  padding: 12px 16px;
-}
-
-.form-comment::placeholder {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.form-label {
-  margin-bottom: 4px;
-
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-}
-
-.form-terms {
-  text-align: center;
-  margin-bottom: 30px;
-  margin-top: 20px;
-
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-
-.terms-link {
-  color: var(--accent-color);
-  text-decoration-line: underline;
-}
-
-.form-button {
-  text-align: center;
-}
-
-.form-icon {
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  margin-right: 12px;
-
-  display: inline-block;
-
-  fill: var(--title-text-color);
 }
