@@ -21,7 +21,7 @@ html {
   --footer-contacts: rgba(255, 255, 255, 0.6);
   --main-button-hover: #118ce8;
   --border-color: #eeeeee;
-  --header-line: ##ececec;
+  --header-line: #ececec;
   --clients-gray: #afb1b8;
   --background-footer-icons: rgba(255, 255, 255, 0.1);
   --backdrop-color: rgba(0, 0, 0, 0.2);
@@ -840,6 +840,8 @@ p {
 
 .modal {
   position: absolute;
+  width: 528px;
+  height: 581px;
   top: 50%;
   left: 50%;
 
@@ -887,7 +889,7 @@ textarea {
 }
 
 .form-modal {
-  width: 528px;
+  width: 100%;
   padding: 40px;
 }
 
